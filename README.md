@@ -30,9 +30,10 @@ Based on the analysis performed on the election data, the following information 
 
   ![This is an image](/Resources/Election_Results_by_candidate.png)
 
-The code used to find the total number of votes was:
+The code file can be found here:  [filename](/PyPoll_Challenge.py)
 
-  # Print the final vote count (to terminal)
+Here is the code used to find the total number of votes:
+
     election_results = (
         f"\nElection Results\n"
         f"-------------------------\n"
@@ -40,6 +41,30 @@ The code used to find the total number of votes was:
         f"-------------------------\n\n"
         f"County Votes:\n")
     print(election_results, end="")
+
+"Here is the code used to find the county with the highest number of votes":"
+
+        if (county_vote > largest_county_turnout_count) and (county_vote_percentage > largest_county_percentage):
+            largest_county_turnout_count = county_vote
+            largest_county_turnout = county
+            largest_county_percentage = county_vote_percentage
+
+    largest_county_turnout_print = (
+        f"-------------------------\n"
+        f"Largest County Turnout: {largest_county_turnout}\n"
+        f"-------------------------\n")
+    print(largest_county_turnout_print)   
+
+Here is the code to find the winning candidate:
+
+    winning_candidate_summary = (
+        f"-------------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count:,}\n"
+        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"-------------------------\n")
+    print(winning_candidate_summary)
+
 
 
 ## Election Audit Summary
