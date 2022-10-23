@@ -76,6 +76,7 @@ The code can be updated to include analysis on the total number of votes each ca
   ![This is an image](/Resources/countyvotesbycandidate.png)
 
 Additional regions could be used instead of counties, such as city or state, by changing the variable name used for county. 
+
   ![This is an image](/Resources/capturing_other_election_data1.png)
 
 In summary, this code could provide other helpful insights. For example, the county with the largest number of votes is particularly useful information, and can lead to other kinds of analysis about high voter turnout. We can look at the number of eligible voters who participated in the elections. We generally want to see these numbers go up. The code developed during this analysis is structured, orderly and customizable, making it useful for future analysis on other data similar to this. 
