@@ -30,7 +30,7 @@ Based on the analysis performed on the election data, the following information 
 
   ![This is an image](/Resources/Election_Results_by_candidate.png)
 
-The code file can be found here:  [filename](/PyPoll_Challenge.py)
+###The code file can be found here:  [filename](/PyPoll_Challenge.py)
 
 Here is the code used to find the total number of votes:
 
@@ -42,7 +42,7 @@ Here is the code used to find the total number of votes:
         f"County Votes:\n")
     print(election_results, end="")
 
-"Here is the code used to find the county with the highest number of votes":"
+Here is the code used to find the county with the highest number of votes":
 
         if (county_vote > largest_county_turnout_count) and (county_vote_percentage > largest_county_percentage):
             largest_county_turnout_count = county_vote
@@ -76,10 +76,5 @@ Additional regions could be used instead of counties, such as city or state, wit
 
   ![This is an image](/Resources/capturing_other_election_data1.png)
 
-## Challenge Overview
-
-
-
-## Challenge Summary
 
 
