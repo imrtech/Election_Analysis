@@ -1,12 +1,17 @@
 # Election_Analysis
 
 ## Project Overview
-A Colorado board of elections employee has asked for election results to perform an election audit. The audit includes the total number of votes cast, a list of the candidates, the total number of votes each candidate received, the percentage of votes for each candidate, and the winner of the election based on the popular vote. In addition to this, the election commission has requested additional information to complete the audit. The new request includes, the voter turnout for each county, the percentage of votes from each county out of the total count, and the county with the highest turnout.
+A Colorado board of elections employee has asked for an election audit to determine the winning candidate, and the county with the largest voter turnout. To perform this analysis we would have to look at the following data:
+- The total number of votes cast.
+- A list of all the candidates.
+- The total number of votes each candidate received.
+- The percentage of votes for each candidate
+- The winner of the election based on the popular vote
+- The voter turnout for each county
+- The percentage of votes from each county out of the total count
+- The county with the highest turnout.
 
-## Resources
-The data source used is election_results.csv. The software used was Python version 3.10.8, Visual Studio Code version 1.72.2, and Git Bash version 2.38.1 Windows.1
-
-## Summary
+## Election Audit Results
 Based on the analysis performed on the election data, the following information was found:
  - A total of 369,711 votes were cast in this election.
  - The counties represented were Arapahoe, Denver and Jefferson.
@@ -24,7 +29,27 @@ Based on the analysis performed on the election data, the following information 
  - The winner of the election is Diana DeGette with 73.8% of the total vote and 272,892 total number of votes.
 
   ![This is an image](/Resources/Election_Results_by_candidate.png)
- 
+
+The code used to find the total number of votes was:
+
+  # Print the final vote count (to terminal)
+    election_results = (
+        f"\nElection Results\n"
+        f"-------------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"-------------------------\n\n"
+        f"County Votes:\n")
+    print(election_results, end="")
+
+
+## Election Audit Summary
+To run the analysis on the data source, election_results.csv, we used Python version 3.10.8, Visual Studio Code version 1.72.2, and Git Bash version 2.38.1 Windows.1. The code developed during this analysis is structured, orderly and customizable, making it useful for future analysis on other election results. The dataset contains three headers, the Ballot ID, County and Candidate Name which made it possible to find the total number of votes, assuming they are all unique votes, the county with the largest number of votes and the winner. The county with the largest number of votes is particularly useful information, and can lead to other kinds of analysis about high voter turnout. For example, we can look at the number of eligible voters who participated in the elections. We generally want to see this numbers go up. Additionally, the code can be updated to include analysis on the total number of votes each candidate received by county.  This would be useful campaign information. 
+
+  ![This is an image](/Resources/countyvotesbycandidate.png)
+
+Additional regions could be used instead of counties, such as city or state, without having to modify the code that much. This code would be helpful in analyzing other data similar to this.
+
+  ![This is an image](/Resources/capturing_other_election_data1.png)
 
 ## Challenge Overview
 
