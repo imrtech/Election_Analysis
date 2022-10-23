@@ -30,7 +30,9 @@ Based on the analysis performed on the election data, the following information 
 
   ![This is an image](/Resources/Election_Results_by_candidate.png)
 
-###The code file can be found here:  [filename](/PyPoll_Challenge.py)
+Here is the link to the election analysis.txt file: [filename](/analysis/election_analysis.txt)
+Here is the link to the election results.csv file: [filename](/Resources/election_results)
+The py code file can be found here:  [filename](/PyPoll_Challenge.py)
 
 Here is the code used to find the total number of votes:
 
