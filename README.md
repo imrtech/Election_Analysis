@@ -68,15 +68,18 @@ Here is the code to find the winning candidate:
     print(winning_candidate_summary)
 
 
-
 ## Election Audit Summary
-To run the analysis on the data source, election_results.csv, we used Python version 3.10.8, Visual Studio Code version 1.72.2, and Git Bash version 2.38.1 Windows.1. The code developed during this analysis is structured, orderly and customizable, making it useful for future analysis on other election results. The dataset contains three headers, the Ballot ID, County and Candidate Name which made it possible to find the total number of votes, assuming they are all unique votes, the county with the largest number of votes and the winner. The county with the largest number of votes is particularly useful information, and can lead to other kinds of analysis about high voter turnout. For example, we can look at the number of eligible voters who participated in the elections. We generally want to see this numbers go up. Additionally, the code can be updated to include analysis on the total number of votes each candidate received by county.  This would be useful campaign information. 
+To run the analysis on the data source, election_results.csv, we used Python version 3.10.8, Visual Studio Code version 1.72.2, and Git Bash version 2.38.1 Windows.1. The dataset contains three headers, the Ballot ID, County and Candidate Name which made it possible to find the total number of votes, assuming they are all unique votes, the county with the largest number of votes and the winner. 
+
+The code can be updated to include analysis on the total number of votes each candidate received by county.  This would be useful campaign information. We can achieve this by taking a count of each county ballot unique to each candidate.
 
   ![This is an image](/Resources/countyvotesbycandidate.png)
 
-Additional regions could be used instead of counties, such as city or state, without having to modify the code that much. This code would be helpful in analyzing other data similar to this.
-
+Additional regions could be used instead of counties, such as city or state, by changing the variable name used for county. 
   ![This is an image](/Resources/capturing_other_election_data1.png)
+
+In summary, this code could provide other helpful insights. For example, the county with the largest number of votes is particularly useful information, and can lead to other kinds of analysis about high voter turnout. We can look at the number of eligible voters who participated in the elections. We generally want to see these numbers go up. The code developed during this analysis is structured, orderly and customizable, making it useful for future analysis on other data similar to this. 
+
 
 
 
